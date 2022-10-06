@@ -1,0 +1,99 @@
+*{margin: 0; padding: 0;
+font-family: 'Alkalami', serif;}
+a{text-decoration: none;}
+li,ul{list-style: none;}
+section{width: 100%; height: 100vh; background-color: orange}      
+
+#wrap{width: 100%;}
+#header{width: 100%;
+     height: 100px;
+    }
+#header .header_in{width: 1200px; margin: 0 auto;
+                    background-color: whitesmoke;
+                height: 100px; display: flex;
+    position: fixed;   left: 0; right: 0;
+}
+#header .logo{width: 150px; height: 100px;
+  text-align: center;   background-color:white;
+ line-height: 100px;}
+nav{width: 100%; margin: 0 auto;
+  height: 100px;  }
+nav ul{display: flex; text-align: center;}
+nav ul li{width: 130px; margin-left: 50px;
+     height: 100px; line-height: 100px;
+    }     
+#header .login{width: 300px;height: 100px;
+    
+    text-align: center; }
+#header .login ul{width: 100%; height: 100px;}
+#header .login li{width: 100px; height: 50px; line-height: 50px;
+float: left;}    
+#header .login a{margin-left: 20px;}
+
+
+.page1{width: 1200px;
+       height: 100vh; margin: 0 auto;
+        background: url(../image/main_img1.jpg);
+        background-size: cover;}
+.page1{ }
+.page1_text{
+    color: wheat; height: 300px;
+   padding-top: 100px;
+    padding: 1rem;} 
+.page1 .main_text{font-size: 30px; }
+.page1 .page1_text p{font-size: 100px; margin-top: 70px;
+     }
+.page1 .text_cl{}
+.page1 .text_cl a{border: 2px solid wheat;
+ color: wheat; font-size: 40px;border-radius: 3px;
+  margin-left: 2rem;
+  padding:10px 5px 0 5px; 
+  
+ }
+.page1 .text_cl a.on{background-color: rgba(170, 165, 165, 0.521);
+ color: rgb(23, 23, 24); transition: 1.5s all;}
+
+ .page2{width: 1200px; overflow: hidden;
+         height: 100vh; margin: 0 auto;}
+.page2 .left{width: 600px; height: 500px; float: left;
+      background-color: white; margin-top: 80px;
+    position: relative;  }
+.page2 .left_text{position: absolute; width: 3000px;}      
+.page2 .left_text li{float: left; padding: 10px;
+     width: 600px; height: 500px;}
+.page2 .left span{ 
+    font-size: 24px; color: blue; font-weight:200;}
+.page2 .left_info{}
+.page2 .left_info h1{}
+.page2 .left_info h2{font-weight: bold;}
+.page2 .left_info p{font: 15px;}      
+.page2 .right{width: 600px; height: 500px; float: right; background-color: yellowgreen; 
+     position: relative; overflow: hidden;
+     margin-top: 80px;}
+
+
+
+.page2 .right .picture {width: 3000px; height: 500px; position: absolute;}
+.page2 .right .picture li{width: 600px; height: 500px; float:left}
+.page2 .right .picture li:nth-child(1){background: url(../image/PUREimg.jpg);
+     background-repeat: no-repeat;background-size: cover; }
+.page2 .right .picture li:nth-child(2){background-color: black;}
+.page2 .right .picture li:nth-child(3){background-color: blueviolet;}
+.page2 .right .picture li:nth-child(4){background-color: violet;}
+.page2 .right .picture li:nth-child(5){background-color: yellow;}
+.page2 .btn{width: 100%; height: 50px; position: absolute;
+    bottom: 20px; text-align: center;
+}
+.page2 .btn li{width:70px; text-align: center;
+    margin-right: 20px; background-color:green;
+    display: inline-block; height: 30px;
+    }
+ 
+.page2 .btn li:nth-child(5){margin-right:0;}    
+.page2 .btn li.on{background-color: rgb(223, 205, 205); width: 50px;
+    transition: all 1s;}
+
+
+.page3 {width: 1200px;
+    margin: 0 auto;
+    height: 100vh; background-color: lightcoral;}

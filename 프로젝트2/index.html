@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <script src="/js/main.js"></script> 
+<script>
+    $(document).ready(function(){
+        var n=0;
+        var a=0;
+        $('.btn li').eq(0).addClass('on')
+     $('.text_cl a').hover(function(){
+                $(this).addClass('on')
+           
+            },
+            function(){$(this).removeClass('on')})
+     $('.left_text li').click(function(){
+        var a=$(this).index()
+        console.log(a,'리스트 인덱스번호')
+
+     })
+     $('.btn li').click(function(){
+        var n=$(this).index()
+        color(n)
+        slider(n)
+  
+  })
+        function slider(n){
+            var posX = n*(-600)+'px'
+            $('.picture').animate({left:posX})
+            $('.left_text').animate({left:posX})
+        }
+        function color(n){
+        $('.btn li').removeClass('on')
+        $('.btn li').eq(n).addClass('on')
+        }
+
+    })
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_in">
+            <div class="logo">
+                <h1>logo</h1>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                    </ul>
+
+                </nav>
+                <div class="login">
+                    <ul>
+                        <li><a href="#">login</a></li>
+                        <li><a href="#">fresh</a></li>
+                    </ul>
+                
+                </div>
+           
+            </div>
+        </header>
+
+    <section>
+        <div class="page1">
+            <div class="page1_text">
+                <div class="main_text">꼭 필요한 성분만을 담아 연구합니다.</div>
+                <p>OUR Story</p>
+            </div>
+            <div class="text_cl">
+              <a href="#">  Read More</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="page2">
+                <div class="main_infor">
+                    <div class="left">
+                        <ul class="left_text">
+                            <li>
+                        <span>★★★★★ 4.9/5</span>
+                        <div class="left_info">
+                            <h1>PURE<br>
+                            BALANCE<br>
+                        PET<br>
+                    SHAMPOO</h1>
+                            <h2>퓨어 프렌즈 샴푸는요?</h2>
+                            <p>피부가 나빠지는데는 여러 이유가 잇지만 보호자와 함께 살아가면서 
+                                <br>접촉하게 되는 400회 이상의 샴푸도 그 원인이 될 수 있다는 것에 주목<br> 
+                                안전한 원료를 담아핡고 흡수되는 문제까지 생각한 제품으로<br>
+                                기존에 일반강아지 샴푸처럼 인공적인 향 및 보들보들한 느낌 등을 배제하고<br>
+                                오직 강아지 피부의 건강만을 생각한 펫 샴푸입니다.  <br> 
+                        </div>
+                       </li>
+                       <li>
+                        <span>★★★★★ 4.8/5</span>
+                        <div class="left_info">
+                            <h1>여기는<br>
+                            제품이름<br>
+                        넣어야<br>
+                    하는 칸</h1>
+                            <h2>상세설명</h2>
+                            <p>과학과 자연 및 인간의 활동에 부수되는 일체의 지식을 압축·정리해서<br> 
+                                각 사항을 가나다순·알파벳순 또는 부문별로 배열하여 만든 지식의 총체물. <br> 
+                                사전(辭典)은 모든 언어의 철자·발음·해석이고, <br> 
+                                사전(事典)은 사항의 지식정보를 빠짐없이 설명한다는 차이점이 있으나,<br> 
+                                 백과사전은 사전(辭典)의 편찬방식을 많이 채택하고 있다.</p>
+                        </div>
+                        
+                       </li>
+                       <li>
+                        <span>★★★★★ 4.6/5</span>
+                        <div class="left_info">
+                            <h1>여기는<br>
+                            제품이름<br>
+                        넣어야<br>
+                    하는 칸</h1>
+                            <h2>상세설명</h2>
+                            <p>과학과 자연 및 인간의 활동에 부수되는 일체의 지식을 압축·정리해서<br> 
+                                각 사항을 가나다순·알파벳순 또는 부문별로 배열하여 만든 지식의 총체물. <br> 
+                                사전(辭典)은 모든 언어의 철자·발음·해석이고, <br> 
+                                사전(事典)은 사항의 지식정보를 빠짐없이 설명한다는 차이점이 있으나,<br> 
+                                 백과사전은 사전(辭典)의 편찬방식을 많이 채택하고 있다.</p>
+                        </div>
+                        
+                       </li>
+                       <li>s
+                        <span>★★★★★ 4.7/5</span>
+                        <div class="left_info">
+                            <h1>여기는<br>
+                            제품이름<br>
+                        넣어야<br>
+                    하는 칸</h1>
+                            <h2>상세설명</h2>
+                            <p>과학과 자연 및 인간의 활동에 부수되는 일체의 지식을 압축·정리해서<br> 
+                                각 사항을 가나다순·알파벳순 또는 부문별로 배열하여 만든 지식의 총체물. <br> 
+                                사전(辭典)은 모든 언어의 철자·발음·해석이고, <br> 
+                                사전(事典)은 사항의 지식정보를 빠짐없이 설명한다는 차이점이 있으나,<br> 
+                                 백과사전은 사전(辭典)의 편찬방식을 많이 채택하고 있다.</p>
+                        </div>
+                        
+                       </li>
+                       <li>
+                        <span>★★★★★ 4.8/5</span>
+                        <div class="left_info">
+                            <h1>여기는<br>
+                            제품이름<br>
+                        넣어야<br>
+                    하는 칸</h1>
+                            <h2>상세설명</h2>
+                            <p>과학과 자연 및 인간의 활동에 부수되는 일체의 지식을 압축·정리해서<br> 
+                                각 사항을 가나다순·알파벳순 또는 부문별로 배열하여 만든 지식의 총체물. <br> 
+                                사전(辭典)은 모든 언어의 철자·발음·해석이고, <br> 
+                                사전(事典)은 사항의 지식정보를 빠짐없이 설명한다는 차이점이 있으나,<br> 
+                                 백과사전은 사전(辭典)의 편찬방식을 많이 채택하고 있다.</p>
+                        </div>
+                        
+                       </li>
+
+                    </ul>
+                    </div>
+                    <div class="right">
+                   
+                    <ul class="picture">
+                        <li><a href="#">그림1</a></li>
+                        <li><a href="#">그림2</a></li>
+                        <li><a href="#">그림3</a></li>
+                        <li><a href="#">그림4</a></li>
+                        <li><a href="#">그림5</a></li>
+                    </ul>
+                    <ul class="btn">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+
+
+    
+                    </ul>
+                </div>
+             
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="page3">
+
+            
+        </div>
+
+
+    </section>
+    </div>
+</body>
+</html>
