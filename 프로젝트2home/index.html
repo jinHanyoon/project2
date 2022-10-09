@@ -16,7 +16,7 @@
         var a=0;
         var v=0;
         $('.nav_info').hide()
-        $('.nav_info2').hide()
+    
 
 
         $('.btn li').eq(0).addClass('on')
@@ -48,24 +48,32 @@
 
 
 
-       $('.after_btns li').click(function(){
-            var c=$(this).index();
-            console.log(c)
+       $('.after_li').click(function(){
+            var c=$(this).index();})
+    
 
    //3번넘겨야함
-           var asoX=c*(-600)+'px'
+            $('.after_left').click(function(){
+           var asoX=c*(0)+'px'
                 $('.after_text').animate({left:asoX},8000)
-                console.log('이동')})
-           
+                console.log('왼쪽값',c)})
+
+             $('.after_right').click(function(){
+                c=1
+                
+                var asoX=c*(-1600)+'px'
+                $('.after_text').animate({left:asoX},8000)
+                console.log(c,'오른쪽클릭')})  
+          
 
 
         $('.after_text li figure').hover(function(){
            $('.after_text').stop()
         },
-        function(){
-            var asoX=(-1600)+'px'
-                $('.after_text').animate({left:asoX},8000)
-        })
+    function(){
+     //       var asoX=(-1600)+'px'
+   //             $('.after_text').animate({left:asoX},8000)
+    })
       
       
         $('.page4_text a').hover(function(){
@@ -78,6 +86,7 @@
         }
         )
         $('.page5_text a').hover(function(){
+            
             $(this).addClass('on')
         },
         function(){
@@ -85,33 +94,37 @@
 
         }
         )
-        $('nav li').hover(function(){
+        $('.nav_menu li').hover(function(){
             var v=$(this).index()
+        $(this).addClass('on')
             console.log(v)
-        },function(){})
-
-
-  
-            
-
-            $('nav li').eq(2).hover(function(){
-                $('.nav_info').fadeIn(500)},function(){
-                $('.nav_info').fadeOut(500)  
-            })
-             
-            $('nav li').eq(3).hover(function(){
-            $('.nav_info2').fadeIn(500)},
-            function(){
-            $('.nav_info2').fadeOut(500)
+        },function(){
+            $(this).removeClass('on')
+        
         })
 
 
+            
+
+            $('nav li').hover(function(){
+                $(this).find('.nav_info').fadeIn()
+                $(this).addClass('on')}
+             ,
+
+                function(){
+              
+                $(this).removeClass('on')
+            })
+            $('.nav_info').mouseleave(function(){
+                $(this).fadeOut()
+            })
+             
+
 
         $('.nav_info li').hover(function(){
-            $(this).addClass('on')
-
+        
         },function(){
-            $(this).removeClass('on')
+          
         }
         )    
     
@@ -131,31 +144,44 @@
         <header id="header">
             <div class="header_in">
             <div class="logo">
-                <h1>logo</h1>
+                <h1>GGami</h1>
             </div>
                 <nav>
-                    <ul>
+                    <ul class="nav_menu">
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">BEST</a></li>
                         <li><a href="#">TOY</a>
                             <div>
                                 <ul class="nav_info">
-                                    <li><a href="#">공</a></li>
+                                    <li><a href="#">공/원반</a></li>
                                     <li><a href="#">인형</a></li>
                                     <li><a href="#">우드스틱</a></li>
                                     <li><a href="#">터그놀이</a></li>
                                 </ul>  
-                            </div></li>
-                        <li><a href="#">Food</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Food</a>
                             <div>
-                                <ul class="nav_info2">
-                                    <li><a href="#">공</a></li>
-                                    <li><a href="#">인형</a></li>
-                                    <li><a href="#">우드스틱</a></li>
-                                    <li><a href="#">터그놀이</a></li>
+                                <ul class="nav_info">
+                                    <li><a href="#">수제간식</a></li>
+                                    <li><a href="#">수제사료</a></li>
+                                    <li><a href="#">젤리류</a></li>
+                                    <li><a href="#">노견용</a></li>
+
+                                </ul>  
+                            </div>
+                        </li>
+                        <li><a href="#">health</a>
+                            <div>
+                                <ul class="nav_info">
+                                    <li><a href="#">타월/가운</a></li>
+                                    <li><a href="#">에센스/샴푸</a></li>
+                                    <li><a href="#">발톱/발관리</a></li>
+                                    <li><a href="#">브러쉬/빗</a></li>
+
                                 </ul>  
                             </div></li>
-                        <li><a href="#">ACT</a></li>
                     </ul>
 
                 </nav>
@@ -300,6 +326,7 @@
     <section>
         <div class="page3">
             <div class="after">
+          
                 <ul class="after_text">
                     <li>
                         <img src="./image/after1.jpg" alt="dog">
@@ -388,10 +415,11 @@
                 </ul>
                 <div class="after_btn">
                     <ul class="after_btns">
-                        <li></li>
-                        <li></li>
+                        <li class="after_left"></li>
+                        <li class="after_right"></li>
                     </ul>
                 </div>
+          
             </div>
         </div>
     </section>
@@ -437,6 +465,42 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer">
+            <ul>
+            <li class="footer_left">
+                <div class="left_textbox"> 
+                <span>네이버㈜  사업자등록번호 000-00-00000</span>
+                       
+                        <p> <br>통신판매업신고번호 0000-경기성남-0000호
+                        <br>대표이사 김철수경기도 성남시 분당구 분당구용 00, NAVER 0000, 0000
+                        <br>전화 1588-0000이메일 abcdefu@naver.com
+                        <br> 사업자등록정보 확인호스팅 서비스 제공 : NAVER Cloud</p>
+                </div>
+
+            </li>
+            <li class="footer_right">
+                <div class="right_textbox1">
+                  <span>고객센터</span>
+                  <P> <br>강원도 춘천시 퇴각로 00 
+                        <br>강원전문회사
+                       <br> 전화 1588-0000
+                       <br> 결제도용신고 1588-0000
+                        </P>
+                </div>
+                <div class="right_textbox2">
+                    <span>전자금융거래 분쟁처리</span>
+                    <p>
+                     <br> 전화 1588-0000
+                      <br> 1:1문의 바로가기
+
+                    </p>
+                </div>
+
+            </li>
+        </ul>
+        </div>
+    </footer>
     </div>
 </body>
 </html>
