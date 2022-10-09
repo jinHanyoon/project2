@@ -85,7 +85,7 @@ float: left;}
      width: 600px; height: 500px;}
 .page2 .left span{ margin:20px 0 0 30px; border-bottom: 3px solid #ccc;
     font-size: 24px; color: rgb(104, 219, 138); font-weight:200;}
-.page2 .left_info{margin: 15px 30px 30px 30px;}
+.page2 .left_info{margin: 15px 30px 30px 30px; }
 .page2 .left_info h1{}
 .page2 .left_info h2{font-weight: bold; border-bottom: 3px solid #ccc;
      font-family: sans-serif;}
@@ -128,7 +128,7 @@ float: left;}
 
 .page3 {width: 1200px;
     margin: 0 auto;
-    height: 100vh;   overflow: hidden;}
+    height: 50vh;   overflow: hidden;}
 .page3 .after{width: 100%; height: 100%;background-color: white;
               position: relative;}
 .page3 .after_text{width:2770px; position: absolute}
@@ -200,7 +200,7 @@ background: url(../image/right.png);background-size: cover;}
     font-family: sans-serif;} 
 .page5_text a{display: inline-block;
     width: 240px; height: 70px; line-height: 70px;
-                border:2px solid #ccc; 
+                border:2px solid #ccc; box-sizing: border-box;
             margin-top: 30px; font-family: sans-serif;
                             font-weight: bold; color: black;}                
 .page5_text a.on{background-color: rgb(161, 161, 161); color: white;
@@ -240,11 +240,13 @@ footer{width: 100%; height: 250px;
 nav{width: 92%; margin: 0 auto; height: 100px; text-align: center;}
 nav ul{display: flex; text-align: center;}
 nav ul li{width: 10%; margin-left: 3.8%; height: 70px; line-height: 70px;}
-nav .nav_info{ height: 200px;}
-nav .nav_info li{ line-height: 50px; height: 50px; margin: 0;}
+nav .nav_info{ width: 100%; 
+    height: 200px;}
+nav .nav_info li{width: 100%;
+    line-height: 50px; height: 50px; margin: 0;}
 .nav_info li a{font-weight: 600;}
 #header .login{width:25%; height: 70px;}
-#header .login ul{width: 100%; background-color: black; height: 70px;}
+#header .login ul{width: 100%;}
 #header .login li{width: 50%; height: 70px; line-height: 50px;}
 #header .login a{margin-left: 1.5%;}
 
@@ -280,15 +282,15 @@ padding: 0.7% 0.35% 0 0.35%;}
 .page4_info{width: 100%;}
 .page4_info li{width: 46%; height: 700px;}
 .page4_text{margin-top:15%;}
-.page4_text a{width:18.4%; height: 70px; line-height: 30px;
+.page4_text a{width:50.4%;  height: 50px; line-height: 50px;
  margin-top: 2.3%;}
  
 .page5{width: 92%; margin: 0 auto;}
 .page5_info{width: 100%;}
 .page5_info li{width: 46%; height: 700px;}
 .page5_text{margin-top:15% ;}
-.page5_text a{width:18.4%; height: 70px;
-line-height: 30px; margin-top:2.3%;}
+.page5_text a{width:50.4%;  height: 50px;
+line-height: 50px; margin-top:2.3%;}
 footer{width: 100%; height: 250px;}
 .footer{width: 92%; height: 250px;
 margin: 0 auto;}
@@ -300,3 +302,4 @@ margin: 0 auto;}
 .footer ul p{padding:0.7%}
 
 }
+
